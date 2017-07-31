@@ -1,0 +1,58 @@
+{
+   	"manifest_version": "2.0",
+	"algo_name": "TDM",
+	"algo_version": "1.0.0",
+	"algo_summary": "Performs cross-platform normalization of microarray and RNA-seq data",
+	"algo_description": "Please input a merged table with the target above the reference",
+	"algo_website": "http://algorun.org",
+	"algo_keywords": ["TDM"],
+	"published_paper": {
+            "title": "Cross-platform normalization of microarray and RNA-seq data for machine learning applications",
+            "url": "https://peerj.com/articles/1621/"
+    	},
+	"algo_authors": [
+		{
+			"name": "Jeffrey A. Thompson",
+			"email": "",
+            		"profile_picture": "",
+			"personal_website": "",
+			"organization": "Geisel School of Medicine at Dartmouth",
+			"org_website": "https://geiselmed.dartmouth.edu/"
+		},
+		{
+			"name": "Jie Tan",
+			"email": "jie.tan.gr@dartmouth.edu",
+            		"profile_picture": "",
+			"personal_website": "",
+			"organization": "Geisel School of Medicine at Dartmouth",
+			"org_website": ""
+		},
+		{
+			"name": "Casey S. Greene",
+			"email": "",
+            		"profile_picture": "",
+			"personal_website": "",
+			"organization": "Geisel School of Medicine at Dartmouth, University of Pennsylvania",
+			"org_website": "http://www.med.upenn.edu/"
+		}
+	],
+	"algo_packager": {
+            "name": "Vishal Shah",
+            "email": "vishah2001@gmail.com",
+            "personal_website": "vishalms.tk",
+            "profile_picture": "",
+            "organization": "",
+            "org_website": ""
+	},
+	"algo_exec": "Rscript modTDM.R $input",
+	"algo_input": [
+		{ "name": "input", "src": "file", "type": "text/plain", "accepted_format": "algorun/undefined" }
+	],
+	"algo_output": [
+		{ "name": "output", "src": "output.txt", "type": "text/csv", "format": "algorun/undefined" }
+	],
+	"algo_parameters": {
+		"caching": "on"
+	},
+	"algo_image": ""
+}

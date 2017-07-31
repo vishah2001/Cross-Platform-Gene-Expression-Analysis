@@ -1,0 +1,43 @@
+{
+   	"manifest_version": "2.0",
+	"algo_name": "PCA",
+	"algo_version": "1.0.0",
+	"algo_summary": "Principal Component Analysis using R.",
+	"algo_description": "Please input a csv",
+	"algo_website": "http://algorun.org",
+	"algo_keywords": ["PCA","Principal", "Component", "Analysis"],
+	"published_paper": {
+            "title": "Exploratory Multivariate Analysis by Example Using R",
+            "url": "https://www.crcpress.com/Exploratory-Multivariate-Analysis-by-Example-Using-R/Husson-Le-Pages/p/book/9781439835807"
+    	},
+	"algo_authors": [
+		{
+			"name": "Default R prcomp() function",
+			"email": "",
+            		"profile_picture": "",
+			"personal_website": "https://www.rdocumentation.org/packages/stats/versions/3.4.1/topics/prcomp",
+			"organization": "",
+			"org_website": "https://www.r-project.org/"
+		}
+	],
+	"algo_packager": {
+            "name": "Vishal Shah",
+            "email": "vishah2001@gmail.com",
+            "personal_website": "http://www.vishalms.tk",
+            "profile_picture": "",
+            "organization": "",
+            "org_website": ""
+	},
+	"algo_exec": "Rscript combine.R $input",
+	"algo_input": [
+		{ "name": "input", "src": "file", "type": "text/csv", "accepted_format": "algorun/undefined" }
+	],
+	"algo_output": [
+		{ "name": "output", "src": "output.csv", "type": "text/csv", "format": "algorun/undefined" }
+	],
+	"algo_parameters": {
+		"caching": "on"
+	},
+	"algo_image": ""
+}
+
